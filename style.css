@@ -23,11 +23,18 @@ body{
 ::before, ::after{
     box-sizing: border-box;
 }
+ul{
+    list-style: none;
+}
 .section{
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
     padding: 0 30px;
+    opacity: 1;
+    top: 0;
+    right: 0;
+    z-index: 0;
     opacity: 1;
     
 }
@@ -124,7 +131,7 @@ body{
     left: 0;
     top: 0;
     border-right: 1px solid var(--bg-black-50);
-    padding: 30px;
+    padding: 36px;
     height: 100%;
     z-index: 10;
     display: flex;
@@ -139,6 +146,7 @@ body{
     text-transform: capitalize;
 }
 
+
 ul li {
     list-style-type: none;
 }
@@ -148,7 +156,7 @@ ul li {
     font-weight: 700;
     padding: 15px 20px;
     font-size: 30px;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     position: relative;
 
 }
@@ -245,7 +253,9 @@ ul li {
 .aside .nav li a.active{
     color:var(--skin-color);
 }
-
+.aside .nav li a i{
+    margin-left:  15px;
+}
 
 
 /* ========================================= */
@@ -253,7 +263,7 @@ ul li {
 .home{
     min-height: 100vh;
     display: flex;
-    color: var(--text-black-900);
+    color: var(--text-black-900); 
 }
 .home .home-info{
     flex: 0 0 60%;
@@ -607,6 +617,98 @@ h3.my-prof {
     font-weight:400;
      
 }
+
+.contact .contact-form{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact .contact-form .col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .form-item{
+    margin-bottom: 30px;
+}
+
+.contact .contact-form .form-item .form-control{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    padding: 10px 25px;
+    color: var(--text-black-700);
+    transition: all 0.3s ease;
+}
+
+.contact .contact-form .form-item .form-control:hover{
+    box-shadow: 0 0  25px rgba(48,46,77,0.15);
+}
+
+.contact .contact-form .form-item  textarea.form-control{
+    height: 140px;
+
+}
+.contact .contact-form .btn {
+    height: 50px;
+    padding: 0 50px;
+
+}
+
+@media (max-width:1199px){
+    
+    
+    
+    .about .about-content .personal-info .info-item p span{
+            display: block;
+    }
+}
+
+@media (max-width:991px){
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .about .about-content .education,
+    .about .about-content .experience,
+    .home .home-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img{
+        display: none;
+
+    }
+   
+}
+@media (max-width:767px){
+    .contact .contact-form .col-6, 
+    .contact .contact-info-item ,
+    .portfolio .portfolio-item,
+    .service .service-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills, 
+    .about .about-content .personal-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+
+
+
+
 
 
 

@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="color-1.css">
+   
 </head>
 <body>
     <!-- Main Container Start -->
@@ -23,11 +25,11 @@
            </div>
            <!-- Nav bar -->
            <ul class="nav">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home" class="active"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li> <a href="#about"> <i class="fas fa-user"></i>About</a></li>
+            <li> <a href="#service"><i class="fa fa-list" aria-hidden="true"></i>Services</a></li>
+            <li></i><a href="#portfolio"><i class="fa fa-briefcase" aria-hidden="true"></i>Portfolio</a></li>
+            <li><a href="#contact"><i class="fa fa-briefcase" aria-hidden="true"></i>Contact</a></li>
         </ul>
         
         
@@ -37,7 +39,7 @@
          <!-- 111111 Main Content 1111-->
         <div class="main-content">
             <!-- HOme Section Start -->
-            <section class="home section hidden ">
+            <section id="home" class="home section  ">
                 <div class="container">
                     <div class="row">
                         <!-- home information  -->
@@ -58,7 +60,7 @@
             </section>
             <!-- Home Section End -->
             <!-- About Section Start============= -->
-            <section class="about section hidden">
+            <section id="about" class="about section">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -126,11 +128,18 @@
                                             <div class="skill-percent">76%</div>
                                         </div>
                                     </div>
-                                     <div class="skill-item  padd-15">
+                                    <div class="skill-item  padd-15">
                                         <h5>Html5</h5>
                                         <div class="progress">
                                             <div class="progress-in" style="width: 86%;"></div>
                                             <div class="skill-percent">86%</div>
+                                        </div>
+                                    </div>
+                                     <div class="skill-item  padd-15">
+                                        <h5>Material UI</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 70%;"></div>
+                                            <div class="skill-percent">70%</div>
                                         </div>
                                     </div>
                                      <div class="skill-item  padd-15">
@@ -269,7 +278,7 @@
 
 
             <!-- =========Service Section Start == ==== == -->
-            <section class="service section hidden">
+            <section id="service" class="service section ">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -329,7 +338,7 @@
             <!-- =========Service Section End == ==== == -->
 
              <!--============= Portfolio item Start-->
-            <section class="portfolio section hidden">
+            <section id="portfolio" class="portfolio section ">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -391,7 +400,7 @@
             <!-- Portfolio item End========-->
 
             <!-- Contact item End========-->
-            <section class="contact section">
+            <section id="contact" class="contact section">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -426,17 +435,50 @@
 
                     <h3 class="contact-title padd-15">SEND ME A MAIL</h3>
                     <h3 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h3>
-                    
+                    <!-- ======Contact form ====== -->
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" type="text" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" type="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="" class="form-control" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn" >Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- Contact item End========-->
 
         </div>  
         <!-- === Main Content End === -->
-
-        
     </div>
     <!-- ===== Main Container End ======== -->
+    <!-- ==========Style Switcher ============= -->
+    <div class="style-switcher">
+        
+        
+    </div>
+
+
+    <!-- ===================Js files -->
     <script src="app.js"></script>
+    <script src="all.min.js"></script>
 </body>
 </html>
