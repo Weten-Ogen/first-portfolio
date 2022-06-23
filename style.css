@@ -175,6 +175,7 @@ ul li {
     border-left: 5px solid var(--skin-color);
     bottom: 0;
     left: 0;
+    
 }
 
 .aside .logo a::after {
@@ -238,6 +239,7 @@ ul li {
 .aside .nav li{
     margin-bottom: 20px;
     display:block;
+  
 
 }
 .aside .nav li a {
@@ -245,16 +247,19 @@ ul li {
     font-weight: 600;
     display: block;
     border-bottom: 1px solid var(--bg-black-50);
+    padding: 14px;
     color: var(--text-black-900);
-    padding: 5px 15px;
 }
+
 
 
 .aside .nav li a.active{
     color:var(--skin-color);
 }
 .aside .nav li a i{
-    margin-left:  15px;
+    margin-left: 15px;
+
+   
 }
 
 
@@ -265,16 +270,17 @@ ul li {
     display: flex;
     color: var(--text-black-900); 
 }
+
 .home .home-info{
     flex: 0 0 60%;
     max-width: 60%;
-
 }
 
 h3.hello {
     font-size:28px;
     margin: 15px 0;
 }
+
 h3.hello span {
     font-size: 30px;
     font-weight: 700;
@@ -285,6 +291,7 @@ h3.my-prof {
     font-size: 30px;
     margin: 15px;
 }
+
 .typing{
     color: var(--skin-color);
 }
@@ -685,12 +692,14 @@ h3.my-prof {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
     .home .home-img{
         display: none;
 
     }
    
 }
+
 @media (max-width:767px){
     .contact .contact-form .col-6, 
     .contact .contact-info-item ,
