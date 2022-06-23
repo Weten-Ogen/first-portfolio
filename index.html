@@ -5,9 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="color-1.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- style for colors -->
+    <link rel="stylesheet" href="css/color-1.css" title="color-1" >
+    <link rel="stylesheet" href="css/color-2.css" title="color-2" disabled>
+    <link rel="stylesheet" href="css/color-3.css" title="color-3" disabled>
+    <link rel="stylesheet" href="css/color-4.css" title="color-4" disabled>
+    <link rel="stylesheet" href="css/color-5.css" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+   
    
 </head>
 <body>
@@ -47,7 +55,7 @@
                             </h3>
 
                             <h3 class="my-prof">I'm a <span class="typing">Web designer</span></h3>
-                            <p>I'm a Web developer with extensive experience for over 3 years . My expertise is to create Websites </p>
+                            <p>I'm a Web developer with extensive experience for over 3 years . My expertise in web development and application </p>
                             <a href="#contact" class="btn hire-me">Hire Me</a>
                         </div>
                         <div class="home-img">
@@ -184,7 +192,7 @@
                                                      <i class="fa fa-briefcase" aria-hidden="true"></i>
                                                     2020 - 2022
                                                 </h3>
-                                                <h4 class="timeline-title">Kwame Nkrumah University of Science & Technology</h4>
+                                                <h4 class="timeline-title">FreeCodeCamp Curriculum</h4>
                                                 <p class="timeline-text">
                                                     I earned certificates in Responsive Web Design, JavaScript Data Structures and Algorithms, Frontend Development Libraries .
                                                 </p>
@@ -228,11 +236,11 @@
                                                 <div class="circle-dot"></div>
                                                 <h3 class="timeline-date">
                                                      <i class="fa fa-briefcase" aria-hidden="true"></i>
-                                                    2016 - 2018
+                                                    2020- 2021
                                                 </h3>
-                                                <h4 class="timeline-title">Assistant Teacher</h4>
+                                                <h4 class="timeline-title">Freelancing</h4>
                                                 <p class="timeline-text">
-                                                    I volunteered to assist my Chemistry teacher in taking adult student and also student in our school who wanted to try their hands on Nov/Dec WAEC exams.  
+                                                    I volunteered and build apps for friends and family . I even built an app for one True faith Church.   
                                                 </p>
                                             </div>
                                             <div class="timeline-item">
@@ -270,6 +278,9 @@
                         <!-- Service item Start -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
+                               <div class="icon">
+                                <i class="fa fa-code" aria-hidden="true"></i>
+                               </div>
                                 <h4>Web Design</h4>
                                 <p>I will design and develop your webSite for you.</p>
                             </div>
@@ -277,34 +288,49 @@
 
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h4>Web Design</h4>
-                                <p>I will design and develop your webSite for you.</p>
+                                <div class="icon">
+                                     <i class="fa fa-mobile-alt" aria-hidden="true"></i>
+                                </div>
+                                <h4>Mobile Responsive</h4>
+                                <p>I design with the mobile first principal that makes site responsive on all mobile designs.</p>
                             </div>
                         </div>
 
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
+                                 <div class="icon">
+                                    <i class="fa fa-laptop-code" aria-hidden="true"></i>
+                                 </div>
                                 <h4>Web Design</h4>
-                                <p>I will design and develop your webSite for you.</p>
+                                <p>I design web apps that are responsive on laptops or computers.</p>
                             </div>
                         </div>
 
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
+                                 <div class="icon">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                 </div>
                                 <h4>Web Design</h4>
-                                <p>I will design and develop your webSite for you.</p>
+                                <p>I design site that have best search engine Optimizations.</p>
                             </div>
                         </div>
 
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h4>Web Design</h4>
-                                <p>I will design and develop your webSite for you.</p>
+                                <div class="icon">
+                                 <i class="fa fa-palette"></i></i>
+                                </div>
+                                <h4>Styling</h4>
+                                <p>I will styling your site and make it both attractive and accessible for all .</p>
                             </div>
                         </div>
 
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
+                                 <div class="icon">
+                                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                                 </div>
                                 <h4>Web Design</h4>
                                 <p>I will design and develop your webSite for you.</p>
                             </div>
@@ -453,14 +479,30 @@
     </div>
     <!-- ===== Main Container End ======== -->
     <!-- ==========Style Switcher ============= -->
+
     <div class="style-switcher">
-        
+       <div class="style-switcher-toggler s-icon">
+             <i class="fas fa-cog fa-spin"></i></i>
+       </div>
+       <div class="day-night s-icon">
+        <i class="fas fa-moon"></i>
+       </div>
+       <h4>Theme Colors</h4>
+       <div class="colors">
+        <span class="color-1" onclick="setActiveStyle(color-1)"></span>
+        <span class="color-2" onclick="setActiveStyle(color-2)"></span>
+        <span class="color-3" onclick="setActiveStyle(color-3)"></span>
+        <span class="color-4" onclick="setActiveStyle(color-4)"></span>
+        <span class="color-5" onclick="setActiveStyle(color-5)"></span>
+       </div>
+       
         
     </div>
 
 
     <!-- ===================Js files -->
-    <script src="app.js"></script>
-    <script src="all.min.js"></script>
+    
+    <script src="js/all.min.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>
