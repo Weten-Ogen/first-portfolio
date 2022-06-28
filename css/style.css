@@ -211,7 +211,7 @@ ul li {
     top: 20px;
     border-radius:5px ;
     background:var(--bg-black-100 ) ;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -732,6 +732,12 @@ h3.my-prof {
         flex: 0 0 50%;
         max-width: 50%;
     }
+    .main-content{
+        padding-left: 0;
+    }
+    .aside{
+        display: none
+    }
     
     .about .about-content .education,
     .about .about-content .experience,
@@ -753,6 +759,10 @@ h3.my-prof {
     .aside .logo{
         position: absolute;
         top: 50px;
+    }
+    .aside .nav-toggler{
+        display:flex;
+
     }
     .aside .nav{
         margin-top: 35px;
